@@ -32,7 +32,7 @@ const MONTHS = [
 
 // from the classic Reddit's top ribbon
 const SUBREDDITS = [
-  "Art",
+  "arabianpost",
   "AskReddit",
   "askscience",
   "aww",
