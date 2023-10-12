@@ -20,7 +20,9 @@ body,
 select {
   font-family: "EB Garamond", "Georgia", "Times New Roman", serif, sans-serif;
 }
-
+.header-controls.bar-aside.flex-row {
+    display: none;
+}
 .app {
   width: 1200px;
   margin: 1em 0;
