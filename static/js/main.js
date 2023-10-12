@@ -165,7 +165,7 @@ async function fetchRedditStories(subreddit, allTime = false) {
   const resp = await fetch(
     `https://api.reddit.com/r/${subreddit}/${
       allTime ? "top?t=all&" : "hot?"
-    }limit=95`
+    }limit=15`
   )
     .then((r) => r.json())
     .catch((e) => console.log(e));
