@@ -333,7 +333,7 @@ function Story(story) {
     text,
   } = story;
   return html`<div class="story">
-    <a href="https://www.reddit.com${source}">
+    <a href="https://www.reddit.com${source}" target="yeah">
       <div class="story-source">${source}</div>
     </a>
     <a href="${href}" target="_blank>
