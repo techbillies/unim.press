@@ -459,20 +459,11 @@ class App extends Component {
         </div>
       </header>
       ${this._loading
-        ? html`<div class="loading">Loading stories...</div>`
+        ? html`<div class="loading">Fetching latest stories...</div>`
         : storiesSection}
       <footer>
-        <p>
-          The Unim.press is a project by
-          <a target="_blank" href="">@thesephist</a>. It's
-          built with
-          <a target="_blank" href="https://github.com/thesephist/torus"
-            >Torus</a
-          >
-          and open source on GitHub at
-          <a target="_blank" href=""
-            >thesephist/unim.press</a
-          >.
+      <p>Latest News from  
+          <a target="_blank" href="">@1arabia</a>
         </p>
       </footer>
     </div>`;
