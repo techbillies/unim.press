@@ -165,7 +165,7 @@ async function fetchRedditStories(subreddit, allTime = false) {
   const resp = await fetch(
     `https://api.reddit.com/r/${subreddit}/${
       allTime ? "top?t=all&" : "hot?"
-    }limit=15`
+    }limit=35`
   )
     .then((r) => r.json())
     .catch((e) => console.log(e));
@@ -421,7 +421,7 @@ class App extends Component {
               >
               and open-source on GitHub at
               <a target="_blank" href="https://hyphendigital.net"
-                >hyphendigital.net</a
+                >https://hyphendigital.net</a
               >.
             </p>
           </div>
