@@ -208,7 +208,7 @@ async function fetchTopRedditComment(permalink) {
   // here we limit each comment request to top 5 comments.
   // either there is a non stickied-comment in the top5, or we bail
   // because otherwise loading the feed takes too long.
-  const commentsResp = await fetch(`https://api.reddit.com${permalink}?limit=15`)
+  const commentsResp = await fetch(`https://api.reddit.com${permalink}?limit=5`)
     .then((r) => r.json())
     .catch((e) => {
       console.error(e);
@@ -258,7 +258,7 @@ async function fetchHNStories() {
 
 function StoryBody(created, text) {
   if (!text) {
-    text = `...`;
+    text = `Lorem ipsum dolor sit amet, ei mel cibo meliore instructior, eam te etiam clita. Id falli facilis intellegam his, eu populo dolorem offendit eam. Noster nemore luptatum ex sit. Ei sea melius definitiones.`;
   }
 
   const words = text.split(" ");
@@ -404,12 +404,13 @@ class App extends Component {
             That's Fit to Uwu"
           </div>
           <a href="/" class="masthead-link">
-            <h1 class="fraktur masthead">1arabia news</h1>
+            <h1 class="fraktur masthead">The Unim.Press</h1>
           </a>
           <div class="header-edition header-main-aside">
             <div class="header-edition-title">The Reddit Edition</div>
             <p class="header-edition-body justify">
-              <strong>1Arabia.com</strong> - Breaking News and Updates. You're currently
+              <strong>The Unim.press</strong> is a Reddit reader in the style of
+              a certain well-known metropolitan newspaper. You're currently
               reading
               ${this.allTime ? "all-time top posts of " : ""}/r/${this
                 .subreddit}.
@@ -459,11 +460,20 @@ class App extends Component {
         </div>
       </header>
       ${this._loading
-        ? html`<div class="loading">Fetching latest stories...</div>`
+        ? html`<div class="loading">Loading stories...</div>`
         : storiesSection}
       <footer>
-      <p>Latest News from  
-          <a target="_blank" href="">@1arabia</a>
+        <p>
+          The Unim.press is a project by
+          <a target="_blank" href="">@thesephist</a>. It's
+          built with
+          <a target="_blank" href="https://github.com/thesephist/torus"
+            >Torus</a
+          >
+          and open source on GitHub at
+          <a target="_blank" href=""
+            >thesephist/unim.press</a
+          >.
         </p>
       </footer>
     </div>`;
