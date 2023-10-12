@@ -409,20 +409,19 @@ class App extends Component {
           <div class="header-edition header-main-aside">
             <div class="header-edition-title">The Reddit Edition</div>
             <p class="header-edition-body justify">
-              <strong>The Unim.press</strong> is a Reddit reader in the style of
-              a certain well-known metropolitan newspaper. You're currently
+              <strong>The Arabian Post</strong> Dubai's most trusted newspaper. You're currently
               reading
               ${this.allTime ? "all-time top posts of " : ""}/r/${this
                 .subreddit}.
-              The Unim.press is built by
+              The Arabian Post: Built by
               <strong
-                ><a target="_blank" href=""
-                  >@thesephist</a
+                ><a target="_blank" href="https://hyphendigital.net"
+                  >@hyphendigital</a
                 ></strong
               >
               and open-source on GitHub at
-              <a target="_blank" href=""
-                >thesephist/unim.press</a
+              <a target="_blank" href="https://hyphendigital.net"
+                >hyphendigital.net</a
               >.
             </p>
           </div>
