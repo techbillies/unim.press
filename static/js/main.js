@@ -165,7 +165,7 @@ async function fetchRedditStories(subreddit, allTime = false) {
   const resp = await fetch(
     `https://api.reddit.com/r/${subreddit}/${
       allTime ? "top?t=all&" : "hot?"
-    }limit=25`
+    }limit=95`
   )
     .then((r) => r.json())
     .catch((e) => console.log(e));
@@ -416,12 +416,12 @@ class App extends Component {
                 .subreddit}.
               The Unim.press is built by
               <strong
-                ><a target="_blank" href="https://thesephist.com"
+                ><a target="_blank" href=""
                   >@thesephist</a
                 ></strong
               >
               and open-source on GitHub at
-              <a target="_blank" href="https://github.com/thesephist/unim.press"
+              <a target="_blank" href=""
                 >thesephist/unim.press</a
               >.
             </p>
@@ -465,13 +465,13 @@ class App extends Component {
       <footer>
         <p>
           The Unim.press is a project by
-          <a target="_blank" href="https://thesephist.com">@thesephist</a>. It's
+          <a target="_blank" href="">@thesephist</a>. It's
           built with
           <a target="_blank" href="https://github.com/thesephist/torus"
             >Torus</a
           >
           and open source on GitHub at
-          <a target="_blank" href="https://github.com/thesephist/unim.press"
+          <a target="_blank" href=""
             >thesephist/unim.press</a
           >.
         </p>
