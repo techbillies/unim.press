@@ -208,7 +208,7 @@ async function fetchTopRedditComment(permalink) {
   // here we limit each comment request to top 5 comments.
   // either there is a non stickied-comment in the top5, or we bail
   // because otherwise loading the feed takes too long.
-  const commentsResp = await fetch(`https://api.reddit.com${permalink}?limit=5`)
+  const commentsResp = await fetch(`https://api.reddit.com${permalink}?limit=15`)
     .then((r) => r.json())
     .catch((e) => {
       console.error(e);
@@ -258,7 +258,7 @@ async function fetchHNStories() {
 
 function StoryBody(created, text) {
   if (!text) {
-    text = `Lorem ipsum dolor sit amet, ei mel cibo meliore instructior, eam te etiam clita. Id falli facilis intellegam his, eu populo dolorem offendit eam. Noster nemore luptatum ex sit. Ei sea melius definitiones.`;
+    text = `...`;
   }
 
   const words = text.split(" ");
@@ -404,13 +404,12 @@ class App extends Component {
             That's Fit to Uwu"
           </div>
           <a href="/" class="masthead-link">
-            <h1 class="fraktur masthead">The Unim.Press</h1>
+            <h1 class="fraktur masthead">1arabia news</h1>
           </a>
           <div class="header-edition header-main-aside">
             <div class="header-edition-title">The Reddit Edition</div>
             <p class="header-edition-body justify">
-              <strong>The Unim.press</strong> is a Reddit reader in the style of
-              a certain well-known metropolitan newspaper. You're currently
+              <strong>1Arabia.com</strong> - Breaking News and Updates. You're currently
               reading
               ${this.allTime ? "all-time top posts of " : ""}/r/${this
                 .subreddit}.
