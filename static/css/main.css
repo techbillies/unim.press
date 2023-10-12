@@ -10,7 +10,6 @@ html {
 
 body {
   background: #f8f8f8;
-  background-image: url(/img/newspaper.jpg);
   background-size: 200px 200px;
   --foreground: #222;
   font-size: var(--foreground);
