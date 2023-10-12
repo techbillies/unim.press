@@ -404,7 +404,7 @@ class App extends Component {
             That's Fit to Uwu"
           </div>
           <a href="/" class="masthead-link">
-            <h1 class="fraktur masthead">The Unim.Press</h1>
+            <h1 class="fraktur masthead">India Real Times</h1>
           </a>
           <div class="header-edition header-main-aside">
             <div class="header-edition-title">The Reddit Edition</div>
