@@ -258,7 +258,7 @@ async function fetchHNStories() {
 
 function StoryBody(created, text) {
   if (!text) {
-    text = `Lorem ipsum dolor sit amet, ei mel cibo meliore instructior, eam te etiam clita. Id falli facilis intellegam his, eu populo dolorem offendit eam. Noster nemore luptatum ex sit. Ei sea melius definitiones.`;
+    text = ``;
   }
 
   const words = text.split(" ");
