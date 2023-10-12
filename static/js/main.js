@@ -208,7 +208,7 @@ async function fetchTopRedditComment(permalink) {
   // here we limit each comment request to top 5 comments.
   // either there is a non stickied-comment in the top5, or we bail
   // because otherwise loading the feed takes too long.
-  const commentsResp = await fetch(`https://api.reddit.com${permalink}?limit=15`)
+  const commentsResp = await fetch(`https://api.reddit.com${permalink}?limit=35`)
     .then((r) => r.json())
     .catch((e) => {
       console.error(e);
